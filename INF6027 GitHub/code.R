@@ -1,6 +1,6 @@
 #TEST 1 
 
-
+# To run this file please download and extract the "cleaned_match_info.csv" file found in the data folder. Please redirect the file path accordingly.
 
 library(ggplot2)  
 library(dplyr)    
@@ -144,7 +144,7 @@ ggplot(combined_data_with_dashed_line, aes(x = matchday, y = aggregate_score, co
 #TEST 2 
 
 
-
+# To run this file, use the same file downloaded from the previous test ("cleaned_match_info_csv") and redirect the file path accordingly.
 
 
 
@@ -207,7 +207,7 @@ ggplot(combined_avg_injurytime, aes(x = matchday, y = avg_injurytime, fill = tea
 # TEST 2 Regression
 
 
-
+# To run this test, please use the same file as the previous tests ("cleaned_match_info.csv"). Once again, redirect the file path.
 
 
 
@@ -239,7 +239,7 @@ summary(england_model)
 # TEST 3 - CLUSTERING 
 
 
-
+# For this, download and extract the file "england_with_assists_total_attempts_passes_tackles". Once this is done, redirect the file path accordingly.
 
 
 
@@ -318,7 +318,7 @@ table(df_clean$Cluster)
 # CREATING NEW DATASET
 
 
-
+# To run this test, download and extract the files "assist_data.csv" and "Match player statistic.csv". Once downloaded, change the file path accordingly.
 
 
 
@@ -423,7 +423,7 @@ print(merged_data_clean)
 
 # TEST 5 - Regression
 
-
+# For this test, download the file "england_with_clean_stats.csv". Once downloaded, change the file path accordingly.
 
 
 
@@ -438,7 +438,7 @@ if (!require(Metrics)) install.packages("Metrics", dependencies = TRUE)
 library(Metrics)  
 
 
-england_data <- read.csv("C:/Users/ethan/OneDrive/Intro to Data Science/Creating new dataset/england_with_cleaned_stats - Copy.csv", header = TRUE)
+england_data <- read.csv("C:/Users/ethan/OneDrive/Intro to Data Science/Creating new dataset/england_with_cleaned_stats.csv", header = TRUE)
 
 
 # Convert 'Official Surname' and 'Official Name' to factors (categorical variables)
@@ -492,7 +492,7 @@ hist(residuals_model,
 #TEST 6 CLEAN SHEETS
 
 
-
+# To run this code, please download and extract the file "Pre-match information.csv". Once downloaded, please update the file accordingly.
 
 
 
